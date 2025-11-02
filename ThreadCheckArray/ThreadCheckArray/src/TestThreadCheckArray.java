@@ -1,7 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Runs two threads to check values in a shared array and print results.
+ */
 public class TestThreadCheckArray {
+	
+	/**
+     * Main method — reads input, starts threads, and prints results.
+     */
 	public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
 			Thread thread1, thread2;
