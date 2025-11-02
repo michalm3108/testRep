@@ -1,4 +1,9 @@
 import java.util.ArrayList;
+/**
+ * SharedData holds shared information for threads, including an integer list,
+ * a target value, a win array, and a flag indicating success.
+ * Used for thread communication and shared state management.
+ */
 
 public class SharedData 
 {

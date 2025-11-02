@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * ThreadCheckArray performs a recursive search on shared data to find
+ * combinations of integers matching a target value. 
+ */
+
 public class ThreadCheckArray implements Runnable 
 {
 	private boolean flag;
@@ -21,7 +26,6 @@ public class ThreadCheckArray implements Runnable
 		}		
 		winArray = new boolean[array.size()];
 	}
-	
 
 	/**
      * Recursive check for combinations matching target value.
@@ -35,7 +39,7 @@ public class ThreadCheckArray implements Runnable
 		}	
 		if (n == 1)
 		{
-			if(b == 0 || b == array.get(n-1));
+			if(b == 0 || b == array.get(n-1))
 			{
 				flag = true;
 				synchronized (sd) 
